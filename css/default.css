@@ -1,0 +1,82 @@
+html {
+    height: 100%;
+}
+html {
+    background: url(../images/checkerboard_low.png), linear-gradient(135deg, #005168 0%,#002c34 100%);
+    font-family: "Helvetica Neue",Roboto,Arial,"Droid Sans",sans-serif;
+    color: #EEE;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+a {
+    color: #FFF;
+}
+
+#topMenu {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: -110px;
+  border: 0;
+  list-style: none;
+  float: right;
+  line-height: 1;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 400px;
+  height: 28px;
+}
+
+#topMenu li {
+  list-style: none;
+  float: left;
+  display: inline;
+  
+}
+
+
+#topMenu li:not(.logo) {
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-top: 8px;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  position: relative;
+  font-variant: small-caps;
+}
+
+#topMenu a {
+    color: #EEE;
+    text-decoration: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 225px);
+}
+
+#topMenu li:not(.logo) a:hover:before {
+  content: " ";
+  position: absolute;
+  left: calc(50% - 10px);
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  bottom: 0px;
+  margin-left: 5px;
+  border-bottom: 8px solid #EEE;
+}
